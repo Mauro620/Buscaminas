@@ -28,18 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panelTablero = new Panel();
             SuspendLayout();
+            // 
+            // panelTablero
+            // 
+            panelTablero.Location = new Point(0, 0);
+            panelTablero.Name = "panelTablero";
+            panelTablero.Size = new Size(686, 582);
+            panelTablero.TabIndex = 0;
+            panelTablero.Paint += panelTablero_Paint;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(778, 594);
+            ClientSize = new Size(690, 586);
+            Controls.Add(panelTablero);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panelTablero;
     }
 }

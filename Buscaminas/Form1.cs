@@ -1,13 +1,23 @@
+using Logica.Elementos;
+
 namespace Buscaminas
 {
     public partial class Form1 : Form
     {
+        private Button[,] buttons = new Button[8, 8]; // Matriz para los botones del tablero
+
         public Form1()
         {
             InitializeComponent();
+            Tablero tablerito = new Tablero();
+            CrearTablero(tablerito);
+
+            this.Size = new Size(725, 800); //Tamaño de la ventana
+            panelTablero.Dock = new DockStyle(); // Fijar el tamño del panel
+            panelTablero.Location = new Point(50, 50); //Centrarlo
         }
 
-        private void CrearTablero(Board board)
+        private void CrearTablero(Tablero tablero)
         {
             int buttonSize = panelTablero.Width / 8;
 
@@ -24,12 +34,11 @@ namespace Buscaminas
                     // Ajuste del tamaño de la fuente
                     btn.Font = new Font("Arial", buttonSize / 2, FontStyle.Bold);
 
-                    Posicion pos = new Posicion(row, col);
-                    Ficha ficha = gameState.Board[pos];
-
+                    //Posicion pos = new Posicion(row, col);
+                    //Ficha ficha = gameState.Board[pos];
 
                     // evento Click a cada botón
-                    btn.Click += (sender, e) => OnCellClick(pos);
+                    btn.Click += (sender, e) => OnCellClick(); // POSICIÖN ES CASILLA AGREGAR!!!!
 
                     // Almacenar el botón en la matriz
                     buttons[row, col] = btn;
@@ -40,5 +49,16 @@ namespace Buscaminas
             }
         }
 
+        private void OnCellClick()
+        {
+            MessageBox.Show("QUIERP PENE");
+            // !!!!!!!!!!!!!!!!!!!! AGREGAR FUNCION REVELAR (CUANDO ESTE HECHA)
+
+        }
+
+        private void panelTablero_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

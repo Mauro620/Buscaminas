@@ -14,3 +14,5 @@ C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.pdb
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.genruntimeconfig.cache
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.sourcelink.json

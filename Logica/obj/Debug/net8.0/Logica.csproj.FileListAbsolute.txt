@@ -12,3 +12,4 @@ C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debu
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.pdb
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\ref\Logica.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.sourcelink.json

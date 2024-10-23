@@ -1,0 +1,14 @@
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\bin\Debug\net8.0\Logica.exe
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\bin\Debug\net8.0\Logica.deps.json
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\bin\Debug\net8.0\Logica.runtimeconfig.json
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\bin\Debug\net8.0\Logica.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\bin\Debug\net8.0\Logica.pdb
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.AssemblyInfoInputs.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.AssemblyInfo.cs
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\refint\Logica.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.pdb
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Logica\obj\Debug\net8.0\ref\Logica.dll

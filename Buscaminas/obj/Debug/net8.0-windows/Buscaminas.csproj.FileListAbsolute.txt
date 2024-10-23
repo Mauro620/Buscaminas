@@ -1,0 +1,16 @@
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.exe
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.deps.json
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.runtimeconfig.json
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.pdb
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.Form1.resources
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.GenerateResource.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfoInputs.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfo.cs
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\refint\Buscaminas.dll
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.pdb
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.genruntimeconfig.cache
+C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll

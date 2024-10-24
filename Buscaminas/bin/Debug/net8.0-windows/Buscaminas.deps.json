@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Buscaminas/1.0.0": {
+        "dependencies": {
+          "Logica": "1.0.0"
+        },
         "runtime": {
           "Buscaminas.dll": {}
+        }
+      },
+      "Logica/1.0.0": {
+        "runtime": {
+          "Logica.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Buscaminas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Logica/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,26 @@
+EWLEMENTOS
+Tablero
+Dificultad
+Minita
+Posición
+Bandera
+Tempo.
+Avisos (posicion que toca minitas)
+//////////////// HEREDACIONES
+Posición
+	MINITA
+		Fila, Columna
+	BANDERA
+		Fila, Columna
+	AVISOS
+		Fila, Columna
+
+Mecanicas
+	DIRECCION (VERIFICA en todas las direcciones casilla por casilla y aviso)
+	REVELAR (Despues de verificar las posiciones de una casilla, en caso de que esten vacias se revelan, en caso de que en esta se encuentre un aviso, se revela, muestre el aviso y pare el condional)
+	
+
+Logica
+	AVISOS (verifica casilla por casilla, si esta toca almenos 1 bomba o más y numero de aviso en casilla evaluada, en caso de no tocar ninguna empty o no colocar numero de aviso)
+	temporizador
+	FUNCION 'isempty' en tablero. (verifica si hay casillas vacias)

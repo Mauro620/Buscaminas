@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauro\\OneDrive\\Documentos\\IUE\\POO\\Buscaminas\\Buscaminas\\Logica\\Logica.csproj": {}
+    "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauro\\OneDrive\\Documentos\\IUE\\POO\\Buscaminas\\Buscaminas\\Logica\\Logica.csproj": {
+    "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauro\\OneDrive\\Documentos\\IUE\\POO\\Buscaminas\\Buscaminas\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\mauro\\OneDrive\\Documentos\\IUE\\POO\\Buscaminas\\Buscaminas\\Logica\\Logica.csproj",
-        "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauro\\OneDrive\\Documentos\\IUE\\POO\\Buscaminas\\Buscaminas\\Logica\\obj\\",
+        "projectPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj",
+        "packagesPath": "C:\\Users\\Janus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Janus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

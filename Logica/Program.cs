@@ -1,7 +1,10 @@
 ﻿namespace Logica
 {
-    public static void Main(string[] args)
+    internal static class Program
     {
-        Console.WriteLine();
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("pene");
+        }
     }
 }

@@ -16,3 +16,27 @@ C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.AssemblyReference.cache
 C:\Users\mauro\OneDrive\Documentos\IUE\POO\Buscaminas\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.sourcelink.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.AssemblyReference.cache
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.Form1.resources
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.GenerateResource.cache
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfoInputs.cache
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfo.cs
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.CoreCompileInputs.cache
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.sourcelink.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.dll
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\refint\Buscaminas.dll
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.pdb
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.deps.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.runtimeconfig.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.exe
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.exe
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.deps.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.runtimeconfig.json
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.dll
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.pdb
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.dll
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.pdb
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.Up2Date
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.genruntimeconfig.cache
+C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll

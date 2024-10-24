@@ -9,7 +9,7 @@ namespace Logica.Elementos
 {
     public class Tablero
     {
-        private readonly Position[,] posicion = new Position[8,8]; // matriz de fichas donde se almacenaran todas nuestras fichas y sus posiciones
+        private readonly Position[,] posicion = new Position[10,10]; // matriz de fichas donde se almacenaran todas nuestras fichas y sus posiciones
 
         public Position this[int row, int col] //Constructor de tipo ficha donde podremos obtener la fila y columna actuales y cambiarlas a un valor establecido 
         {

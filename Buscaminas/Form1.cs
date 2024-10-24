@@ -4,7 +4,7 @@ namespace Buscaminas
 {
     public partial class Form1 : Form
     {
-        private Button[,] buttons = new Button[8, 8]; // Matriz para los botones del tablero
+        private Button[,] buttons = new Button[10, 10]; // Matriz para los botones del tablero
 
         public Form1()
         {
@@ -19,7 +19,7 @@ namespace Buscaminas
 
         private void CrearTablero(Tablero tablero)
         {
-            int buttonSize = panelTablero.Width / 8;
+            int buttonSize = panelTablero.Width / 10;
 
             panelTablero.Controls.Clear(); // Limpiar cualquier control existente en el panel
 

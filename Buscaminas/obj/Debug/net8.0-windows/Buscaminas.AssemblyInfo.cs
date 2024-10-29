@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Buscaminas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f7a1aa6e96dffa17208c402837c531949aabfb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0040d38ab6181e57c80eeb2fdb8e33d5a2c756f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Buscaminas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Buscaminas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

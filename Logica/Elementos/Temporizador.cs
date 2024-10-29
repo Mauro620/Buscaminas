@@ -8,5 +8,6 @@ namespace Logica.Elementos
 {
     internal class Temporizador
     {
+
     }
 }

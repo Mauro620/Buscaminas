@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica.Elementos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,11 +35,10 @@ namespace Logica.Mecanicas
             return new Direccion(escalar * direccion.RowDelta, escalar * direccion.ColumnDelta);
         }
 
-        //public static Posicion operator +(Posicion pos, Direccion dir)
-        //{
-        //    return new Posicion(pos.Row + dir.RowDelta, pos.Column + dir.ColumnDelta);
-        //}
-
+        public static Position operator +(Position pos, Direccion dir)
+        {
+            return new Position(pos.Row + dir.RowDelta, pos.Column + dir.ColumnDelta);
+        }
 
     }
 }

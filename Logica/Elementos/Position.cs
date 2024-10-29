@@ -1,4 +1,5 @@
 ﻿using Logica.Elementos;
+using System.Runtime.CompilerServices;
 
 namespace Logica.Elementos
 {
@@ -6,11 +7,13 @@ namespace Logica.Elementos
     {
         public int Row { get; }
         public int Column { get; }
+        public bool HasMine { get; set; }
 
         public Position(int row, int column)
         {
             Row = row;
             Column = column;
+            HasMine = false;
         }
 
         public override bool Equals(object obj)

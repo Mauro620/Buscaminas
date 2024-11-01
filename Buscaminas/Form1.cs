@@ -1,5 +1,6 @@
 using Logica.Elementos;
 using Logica.Mecanicas;
+using System.ComponentModel;
 
 namespace Buscaminas
 {
@@ -11,6 +12,7 @@ namespace Buscaminas
         static Button[,] buttons;       //Matriz de botones, está es diferente a la matriz o tablero donde se almacenaran las minas.
         static Tablero holi;        //'holi' guarda un tablero donde se almacenan las minas
         static Direccion[] dir;       //Objeto de la dirección, se usara para evular los botones
+        bool[,] visited;
         public Form1()
         {
             InitializeComponent();
@@ -64,6 +66,7 @@ namespace Buscaminas
                     panelTablero.Controls.Add(btn);
                 }
             }
+            visited = new bool[rowsandcolumns, rowsandcolumns];
         }
 
         private void OnCellClick(int pos_x, int pos_y)
@@ -71,14 +74,16 @@ namespace Buscaminas
             if (holi[pos_x, pos_y].HasMine)     //Verifica si en la posicion clickeada 'holi' tiene valor booleano true(contiene mina)
             {
                 MessageBox.Show("Mina");
+                PaneEnabled();
             }
+
             else
             {
                 Position posClickeada = new Position(pos_x, pos_y);     //Creamos un objeto de posici´on nuevo que tendrá de magnitud los valores de la casilla que hayamos clickeado
                 int contMinas = 0;
-                buttons[pos_x,pos_y].Text = (minasalrededor(holi, posClickeada, contMinas)).ToString();
+                //buttons[pos_x,pos_y].Text = (minasalrededor(holi, posClickeada, contMinas)).ToString();
 
-                if((minasalrededor(holi, posClickeada, contMinas)) == 0)
+                if ((minasalrededor(holi, posClickeada, contMinas)) == 0)
                 {
                     buttons[pos_x, pos_y].BackColor = Color.AliceBlue;
                 }
@@ -103,45 +108,74 @@ namespace Buscaminas
 
         public int minasalrededor(Tablero board, Position posiActual, int contMinas)
         {
-            dir = new Direccion[]       // Se define la variable dir, esta variable contendr{a los posibles direcciones que verificará.
-                {
-                    Direccion.NorthEast,
-                    Direccion.NorthWest,
-                    Direccion.SouthEast,
-                    Direccion.SouthWest,
-                    Direccion.North,
-                    Direccion.South,
-                    Direccion.East,
-                    Direccion.West
-                };
+            if (visited[posiActual.Row, posiActual.Column])
+            {
+                return 0;
+            }
 
+            visited[posiActual.Row, posiActual.Column] = true;
+
+            dir = new Direccion[]
+            {
+                Direccion.NorthEast, 
+                Direccion.NorthWest, 
+                Direccion.SouthEast, 
+                Direccion.SouthWest,
+                Direccion.North, 
+                Direccion.South, 
+                Direccion.East,
+                Direccion.West
+            };
+            
             foreach (var direccion in dir)
             {
-                Position posVerificar = posiActual + direccion;     //Se crea una nueva posición, esta se dá por la sumatoria de las posiciones; actual y direccion unitaria
-                if (posVerificar.Row >= 0 && posVerificar.Row < diff.dificultadYminas().Item1 && posVerificar.Column >= 0 
-                    && posVerificar.Column < diff.dificultadYminas().Item1)     //Asegura que la verificación no se desfase de los limites del tablero
+                Position posVerificar = posiActual + direccion;
+                if (posVerificar.Row >= 0 && posVerificar.Row < diff.dificultadYminas().Item1 &&
+                    posVerificar.Column >= 0 && posVerificar.Column < diff.dificultadYminas().Item1)
                 {
-                    if (holi[posVerificar].HasMine)     //Evaúa qué la casilla "nueva", con magnitudes de posVerificar, su valor booleano sea true(que contenga mina).
+                    if (board[posVerificar].HasMine)
                     {
-                         contMinas++;
-                    }
-                    else
-                    {
-                        buttons[posVerificar.Row, posVerificar.Column].BackColor = Color.AliceBlue;     /*Colorea las casillas donde su valor booleano sea false. Solo colorea
-                                                                                                         * las casillas dentro del radio de direcciones*/
-                        //int contInicio = 0;
-                        //int contFinal = 2;
-
-                        //while (contInicio < contFinal)
-                        //{
-                        //    minasalrededor(holi, holi[posVerificar], contMinas);
-                        //    contInicio++;
-                        //    break;
-                        //}
+                        contMinas++;
                     }
                 }
             }
+
+            if (contMinas == 0)
+            {
+                buttons[posiActual.Row, posiActual.Column].BackColor = Color.AliceBlue;
+
+                foreach (var direccion in dir)
+                {
+                    Position posVerificar = posiActual + direccion;
+
+                    if (posVerificar.Row >= 0 && posVerificar.Row < diff.dificultadYminas().Item1 &&
+                        posVerificar.Column >= 0 && posVerificar.Column < diff.dificultadYminas().Item1)
+                    {
+                        if (!board[posVerificar].HasMine)
+                        {
+                            minasalrededor(board, posVerificar, contMinas);  
+                        }
+                    }
+                }
+            }
+            else
+            {
+                buttons[posiActual.Row, posiActual.Column].BackColor = Color.AliceBlue;
+                buttons[posiActual.Row, posiActual.Column].Text = contMinas.ToString();
+            }
+
             return contMinas;
+        }
+
+        public void PaneEnabled()
+        {
+            for (int row = 0; row < diff.dificultadYminas().Item1; row++)
+            {
+                for (int col = 0; col < diff.dificultadYminas().Item1; col++)
+                {
+                    buttons[row, col].Enabled = false;
+                }
+            }
         }
     }
 }

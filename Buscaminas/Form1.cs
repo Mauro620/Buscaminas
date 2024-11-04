@@ -25,64 +25,50 @@ namespace Buscaminas
         // ---------------- Metodo para inicializar el tablero como una matriz de botones -------------------
         private void CrearTablero(int rowsandcolumns)
         {
-            int buttonSize = panelTablero.Width / 15;       //Definir tamaño de botones
+            int buttonSize = panelTablero.Width / 15;  // Definir tamaño de botones
 
-            buttons = new Button[rowsandcolumns, rowsandcolumns];       //Tamaño de la matriz de botones
+            buttons = new Button[rowsandcolumns, rowsandcolumns];  // Tamaño de la matriz de botones
 
-            int panelWidthAndHeight = rowsandcolumns * buttonSize;      //Variable para definir la anchura y tamaño del panel que se encuentra en el forms
+            int panelWidthAndHeight = rowsandcolumns * buttonSize;  // Definir anchura y altura del panel
 
-            panelTablero.Size = new Size(panelWidthAndHeight, panelWidthAndHeight);     //Definimos el tamaño del tablero con la variable anterior
-            panelTablero.Controls.Clear();
-            panelTablero.Location = new Point((this.ClientSize.Width - panelTablero.Width) / 2, (this.ClientSize.Height - panelTablero.Height) / 2); //Centramos el tablero
-
-            panelTablero.Controls.Clear();      //Limpiar el panel (verifica que el tablero no tenga elementos para cuando se reinicie el juego o se cambie el modo) 
-
+            panelTablero.Size = new Size(panelWidthAndHeight, panelWidthAndHeight);  // Definir el tamaño del panel
+            panelTablero.Controls.Clear();  // Limpiar el panel
+            panelTablero.Location = new Point(
+                (this.ClientSize.Width - panelTablero.Width) / 2,
+                (this.ClientSize.Height - panelTablero.Height) / 2);  // Centrar el tablero
 
             for (int row = 0; row < rowsandcolumns; row++)
             {
                 for (int col = 0; col < rowsandcolumns; col++)
                 {
-                    Button btn = new Button();
-                    btn.Size = new Size(buttonSize, buttonSize);
-                    btn.Location = new Point(col * buttonSize, row * buttonSize);
-
-                    // Ajuste del tamaño de la fuente
-                    btn.Font = new Font("Arial", buttonSize / 2, FontStyle.Bold);
+                    Button btn = new Button
+                    {
+                        Size = new Size(buttonSize, buttonSize),
+                        Location = new Point(col * buttonSize, row * buttonSize),
+                        Font = new Font("Arial", buttonSize / 2, FontStyle.Bold),
+                        FlatStyle = FlatStyle.Flat,
+                        BackColor = (row + col) % 2 == 0 ? Color.LightGreen : Color.DarkSeaGreen,  // Colores alternos
+                        Margin = new Padding(0),
+                        FlatAppearance = { BorderSize = 0 }
+                    };
 
                     int pos_x = row;
                     int pos_y = col;
 
-                    // Alternar colores de fondo en dos tonos de verde
-                    if ((row + col) % 2 == 0)
-                    {
-                        btn.BackColor = Color.LightGreen;
-                    }
-                    else
-                    {
-                        btn.BackColor = Color.DarkSeaGreen;
-                    }
-
-                    // evento Click a cada botón
-                    btn.Click += (sender, e) => OnCellClick(pos_x, pos_y); 
-                    // --------------------------- Click derecho para poner banderas -------------------------
+                    // Manejar el clic en el botón
+                    btn.Click += (sender, e) => OnCellClick(pos_x, pos_y);
                     btn.MouseDown += (sender, e) => OnCellRightClick(sender, e, pos_x, pos_y);
 
                     // Almacenar el botón en la matriz
                     buttons[row, col] = btn;
 
-                    // --------------------- Este metodo lo usamos para mostrar las minas en el tablero -----------------------
-                    //if (holi[row, col].HasMine)
-                    //{
-                    //    buttons[row, col].Text = "B";
-                    //}
-                    //----------------------------------------------------------------------------------------------
-
                     // Agregar el botón al panel
                     panelTablero.Controls.Add(btn);
                 }
             }
-            visited = new bool[rowsandcolumns, rowsandcolumns];
+            visited = new bool[rowsandcolumns, rowsandcolumns];  // Inicializar la matriz de visitados
         }
+
 
         // ---------------- metodo que Añade una bandera cuando le demos click derecho, esto permitira marcar donde creamos que hay minas --------
         private void OnCellRightClick(object sender, MouseEventArgs e, int pos_x, int pos_y)
@@ -104,12 +90,13 @@ namespace Buscaminas
         }
 
         // ---------------- Metodo Landa que se ejecutara cuando hagamos click en un boton, en caso de ser una mina acaba el juego --------
-        private void OnCellClick(int pos_x, int pos_y)
+        private async void OnCellClick(int pos_x, int pos_y)
         {
             if (holi[pos_x, pos_y].HasMine)
             {
-                MessageBox.Show("Mina");
-                PaneEnabled(); // Método para deshabilitar el tablero
+                MessageBox.Show("Has revelado una mina, el juego termina.");
+                await RevealAllMinesSequentially(); // Revela todas las minas de forma secuencial
+                PaneEnabled(); // Deshabilita el tablero
             }
             else
             {
@@ -122,16 +109,35 @@ namespace Buscaminas
                     {
                         buttons[pos_x, pos_y].BackColor = Color.SandyBrown;
                     }
-
+                    // Metodo temporal para comprobar si todas las celdas a excepcion de las minas fueron reveladas
                     if (revealedCells == (diff.dificultadYminas().Item1 * diff.dificultadYminas().Item1) - minasaux)
                     {
                         MessageBox.Show($"¡Felicidades, ganaste! Celdas reveladas: {revealedCells}, Total de celdas sin minas: {(diff.dificultadYminas().Item1 * diff.dificultadYminas().Item1) - minasaux}");
                     }
-                    
-
                 }
             }
         }
+
+        // ------------------------- Funcion para revelar todas las minas en el tablero -----------------------
+        private async Task RevealAllMinesSequentially()
+        {
+            // Itera sobre todas las celdas en el tablero
+            for (int row = 0; row < diff.dificultadYminas().Item1; row++)
+            {
+                for (int col = 0; col < diff.dificultadYminas().Item1; col++)
+                {
+                    // Si la celda tiene una mina, la revela
+                    if (holi[row, col].HasMine)
+                    {
+                        buttons[row, col].Text = "💣";
+                        buttons[row, col].BackColor = Color.Red;
+
+                        await Task.Delay(300); 
+                    }
+                }
+            }
+        }
+
         // ---------------- Metodo random que no hemos podido eliminar :( ------------------------
         private void panelTablero_Paint(object sender, PaintEventArgs e)
         {

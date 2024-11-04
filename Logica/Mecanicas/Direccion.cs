@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Logica.Mecanicas
 {
+    // La clase direccion es un objeto que nos permite hacer operaciones con matrices para facilitar otros metodos como el de 
+    // minasAlrededor, almacenamos informacion de cambios en todas las direcciones de una posición en la matriz
     public class Direccion
     {
         public readonly static Direccion North = new Direccion(-1, 0);

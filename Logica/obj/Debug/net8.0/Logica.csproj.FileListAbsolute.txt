@@ -28,3 +28,18 @@ C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Logica\bin\Debug\net8.0\Log
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Logica\bin\Debug\net8.0\Logica.pdb
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Logica\obj\Debug\net8.0\ref\Logica.dll
+C:\Buscaminas\Logica\bin\Debug\net8.0\Logica.exe
+C:\Buscaminas\Logica\bin\Debug\net8.0\Logica.deps.json
+C:\Buscaminas\Logica\bin\Debug\net8.0\Logica.runtimeconfig.json
+C:\Buscaminas\Logica\bin\Debug\net8.0\Logica.dll
+C:\Buscaminas\Logica\bin\Debug\net8.0\Logica.pdb
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.AssemblyInfoInputs.cache
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.AssemblyInfo.cs
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.csproj.CoreCompileInputs.cache
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.sourcelink.json
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.dll
+C:\Buscaminas\Logica\obj\Debug\net8.0\refint\Logica.dll
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.pdb
+C:\Buscaminas\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
+C:\Buscaminas\Logica\obj\Debug\net8.0\ref\Logica.dll

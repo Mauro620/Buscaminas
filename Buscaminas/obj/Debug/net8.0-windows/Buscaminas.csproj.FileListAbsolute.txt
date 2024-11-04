@@ -40,3 +40,27 @@ C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\bin\Debug\net8.0
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.Up2Date
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.genruntimeconfig.cache
 C:\Users\Janus\Desktop\proyecto poo final\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.deps.json
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.runtimeconfig.json
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.exe
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.exe
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.deps.json
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.runtimeconfig.json
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.dll
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Buscaminas.pdb
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.dll
+C:\Buscaminas\Buscaminas\bin\Debug\net8.0-windows\Logica.pdb
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.AssemblyReference.cache
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.Form1.resources
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.GenerateResource.cache
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfoInputs.cache
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.AssemblyInfo.cs
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.CoreCompileInputs.cache
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.sourcelink.json
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.csproj.Up2Date
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.dll
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\refint\Buscaminas.dll
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.pdb
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\Buscaminas.genruntimeconfig.cache
+C:\Buscaminas\Buscaminas\obj\Debug\net8.0-windows\ref\Buscaminas.dll

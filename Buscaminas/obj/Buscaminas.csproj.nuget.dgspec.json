@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Buscaminas\\Buscaminas.csproj": {}
+    "C:\\Buscaminas\\Buscaminas\\Buscaminas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Buscaminas\\Buscaminas.csproj": {
+    "C:\\Buscaminas\\Buscaminas\\Buscaminas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Buscaminas\\Buscaminas.csproj",
+        "projectUniqueName": "C:\\Buscaminas\\Buscaminas\\Buscaminas.csproj",
         "projectName": "Buscaminas",
-        "projectPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Buscaminas\\Buscaminas.csproj",
-        "packagesPath": "C:\\Users\\Janus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Buscaminas\\obj\\",
+        "projectPath": "C:\\Buscaminas\\Buscaminas\\Buscaminas.csproj",
+        "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
+        "outputPath": "C:\\Buscaminas\\Buscaminas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Janus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj": {
-                "projectPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj"
+              "C:\\Buscaminas\\Logica\\Logica.csproj": {
+                "projectPath": "C:\\Buscaminas\\Logica\\Logica.csproj"
               }
             }
           }
@@ -71,17 +72,17 @@
         }
       }
     },
-    "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj": {
+    "C:\\Buscaminas\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Buscaminas\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\Logica.csproj",
-        "packagesPath": "C:\\Users\\Janus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janus\\Desktop\\proyecto poo final\\Buscaminas\\Logica\\obj\\",
+        "projectPath": "C:\\Buscaminas\\Logica\\Logica.csproj",
+        "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
+        "outputPath": "C:\\Buscaminas\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Janus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,6 +90,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -1,6 +1,9 @@
 ﻿using Logica.Elementos;
 using Logica.Mecanicas;
 using System.ComponentModel;
+using System.Windows.Forms;
+using System.Threading;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Buscaminas
 {
@@ -13,6 +16,9 @@ namespace Buscaminas
         static Tablero holi;        //'holi' guarda un tablero donde se almacenan las minas
         static Direccion[] dir;       //Objeto de la dirección, se usara para evular los botones
         bool[,] visited;
+        private Timer timerBlanco = new Timer();
+        private int tiempoRestanteBlanco = 0;
+
 
         private int revealedCells = 0; // Lleva la cuenta de casillas reveladas lo estaremos llamando en el metodo "minasalrededor"
 
@@ -20,6 +26,7 @@ namespace Buscaminas
         {
             InitializeComponent();
             this.Size = new Size(950, 800); //Tamaño de la ventana
+
         }
 
         // ---------------- Metodo para inicializar el tablero como una matriz de botones -------------------
@@ -69,7 +76,7 @@ namespace Buscaminas
             visited = new bool[rowsandcolumns, rowsandcolumns];  // Inicializar la matriz de visitados
         }
 
-
+        Color colorAnterior = Color.AliceBlue;
         // ---------------- metodo que Añade una bandera cuando le demos click derecho, esto permitira marcar donde creamos que hay minas --------
         private void OnCellRightClick(object sender, MouseEventArgs e, int pos_x, int pos_y)
         {
@@ -78,25 +85,38 @@ namespace Buscaminas
                 Button btn = buttons[pos_x, pos_y];
                 if (btn.Text == "")
                 {
+                    colorAnterior = btn.BackColor;
                     btn.Text = "🚩";
                     btn.BackColor = Color.Red;
                 }
                 else // solo para quitar la bandera en caso de que ya haya 
                 {
                     btn.Text = "";
-                    btn.BackColor = default(Color);
+                    btn.BackColor = colorAnterior;
                 }
             }
         }
+
+        private void TimerBlanco_Tick(object sender, EventArgs e)
+        {
+            if (tiempoRestanteBlanco <= 72000000)
+            {
+                tiempoRestanteBlanco++;
+                temporizador.Text = FormatearTiempo(tiempoRestanteBlanco);
+            }
+        }
+
 
         // ---------------- Metodo Landa que se ejecutara cuando hagamos click en un boton, en caso de ser una mina acaba el juego --------
         private async void OnCellClick(int pos_x, int pos_y)
         {
             if (holi[pos_x, pos_y].HasMine)
             {
+                timerBlanco.Stop();
                 MessageBox.Show("Has revelado una mina, el juego termina.");
-                await RevealAllMinesSequentially(); // Revela todas las minas de forma secuencial
                 PaneEnabled(); // Deshabilita el tablero
+                await RevelarMinasSecuencia(); // Revela todas las minas de forma secuencial
+                
             }
             else
             {
@@ -113,13 +133,14 @@ namespace Buscaminas
                     if (revealedCells == (diff.dificultadYminas().Item1 * diff.dificultadYminas().Item1) - minasaux)
                     {
                         MessageBox.Show($"¡Felicidades, ganaste! Celdas reveladas: {revealedCells}, Total de celdas sin minas: {(diff.dificultadYminas().Item1 * diff.dificultadYminas().Item1) - minasaux}");
+                        timerBlanco.Stop();
                     }
                 }
             }
         }
 
         // ------------------------- Funcion para revelar todas las minas en el tablero -----------------------
-        private async Task RevealAllMinesSequentially()
+        private async Task RevelarMinasSecuencia()
         {
             // Itera sobre todas las celdas en el tablero
             for (int row = 0; row < diff.dificultadYminas().Item1; row++)
@@ -132,7 +153,7 @@ namespace Buscaminas
                         buttons[row, col].Text = "💣";
                         buttons[row, col].BackColor = Color.Red;
 
-                        await Task.Delay(300); 
+                        await Task.Delay(300);
                     }
                 }
             }
@@ -144,16 +165,31 @@ namespace Buscaminas
             //METODO QUE NO SE PUEDE ELIMINAR XD
         }
         // ---------------- ComboBox de dificultad donde nos almacena la información que nos interesa del tablero segun la dificultad ---------
+
+
+        private string FormatearTiempo(int segundos)
+        {
+            int minutos = segundos / 60;
+            int segundosRestantes = segundos % 60;
+            return $"{minutos:D2}:{segundosRestantes:D2}";
+        }
+
         private void cmbxDifficult_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string dificultad = (string) cmbxDifficult.SelectedItem;        //Toma el valor string de la dificultad seleccionada
+            string dificultad = (string)cmbxDifficult.SelectedItem;        //Toma el valor string de la dificultad seleccionada
             diff = new Dificultad(dificultad);      //Crea un objeto de dificultad tomando el valor dado de lcomvbobox
             holi = Tablero.Initial(diff.dificultadYminas().Item1, diff.dificultadYminas().Item1, diff.dificultadYminas().Item2);     /*Definimos holi, la variable del
             tablero. Esta la inicializamos con el metodo del mismo nombre, segun las filas y columnas de la dificultad y le pasamos el valor de minas*/
 
             CrearTablero(diff.dificultadYminas().Item1);        //Creamos el 'tablero' de botones, estos son los que interactuan con el usuairo
             minasaux = diff.dificultadYminas().Item2;      //Valor de minas auxiliar, por si se necesita llamar en algún método
+            timerBlanco.Interval = 1000; // 1 segundo
+            timerBlanco.Tick += TimerBlanco_Tick;
+
+            temporizador.Text = "00:00";
+            timerBlanco.Start();
         }
+
 
         // ------------esta funcion permite revelar la cantidad de minas que se encuentran al rededor de una casilla vacia ------
         public int minasalrededor(Tablero board, Position posiActual, int contMinas)
@@ -209,6 +245,10 @@ namespace Buscaminas
                         {
                             minasalrededor(board, posVerificar, contMinas);
                         }
+                        if (buttons[posVerificar.Row, posVerificar.Column].Text == "🚩")
+                        {
+                            buttons[posVerificar.Row, posVerificar.Column].Text = "";
+                        }
                     }
                 }
             }
@@ -238,5 +278,6 @@ namespace Buscaminas
                 }
             }
         }
+
     }
 }

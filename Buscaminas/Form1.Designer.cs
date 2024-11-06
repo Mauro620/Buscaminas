@@ -31,6 +31,7 @@
             panelTablero = new Panel();
             label1 = new Label();
             cmbxDifficult = new ComboBox();
+            temporizador = new Label();
             SuspendLayout();
             // 
             // panelTablero
@@ -61,11 +62,21 @@
             cmbxDifficult.Text = "Seleccionar dificultad";
             cmbxDifficult.SelectedIndexChanged += cmbxDifficult_SelectedIndexChanged;
             // 
+            // temporizador
+            // 
+            temporizador.AutoSize = true;
+            temporizador.Location = new Point(371, 16);
+            temporizador.Name = "temporizador";
+            temporizador.Size = new Size(25, 15);
+            temporizador.TabIndex = 4;
+            temporizador.Text = "000";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(701, 594);
+            Controls.Add(temporizador);
             Controls.Add(cmbxDifficult);
             Controls.Add(label1);
             Controls.Add(panelTablero);
@@ -81,5 +92,6 @@
         private Panel panelTablero;
         private Label label1;
         private ComboBox cmbxDifficult;
+        private Label temporizador;
     }
 }
